@@ -56,8 +56,8 @@ services:
     image: obsidiandynamics/kafka
     restart: "no"
     ports:
-      - 2181:2181
-      - 9092:9092
+      - "2181:2181"
+      - "9092:9092"
     networks:
       - orchestrator-saga
     environment:
@@ -79,7 +79,7 @@ services:
     entrypoint: /bin/sh
     command: -c "echo \"$$CONSOLE_CONFIG_FILE\" > /tmp/config.yml; /app/console"
     ports:
-      - 8081:8080
+      - "8081:8080"
     networks:
       - orchestrator-saga
     environment:
@@ -89,6 +89,7 @@ services:
           brokers: ["kafka:29092"]
     depends_on:
       - "kafka"
+
   order-service:
     build: './order-service'
     container_name: order-service
