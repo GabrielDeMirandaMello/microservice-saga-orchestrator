@@ -16,7 +16,6 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 
-import static br.com.microservices.orchestrated.paymentservice.core.enums.EPaymentStatus.SUCCESS;
 import static br.com.microservices.orchestrated.paymentservice.core.enums.ESagaStatus.*;
 
 @Slf4j
