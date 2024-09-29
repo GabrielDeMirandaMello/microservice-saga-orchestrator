@@ -133,6 +133,7 @@ services:
         - DB_PASSWORD=postgres
       ports:
         - 8090:8090
+
   payment-service:
     build: './payment-service'
     container_name: payment-service
@@ -150,6 +151,7 @@ services:
       - DB_PASSWORD=postgres
     ports:
       - 8091:8091
+
   inventory-service:
     build: './inventory-service'
     container_name: inventory-service

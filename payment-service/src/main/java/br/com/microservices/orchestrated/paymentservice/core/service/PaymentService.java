@@ -23,7 +23,7 @@ import static br.com.microservices.orchestrated.paymentservice.core.enums.ESagaS
 @AllArgsConstructor
 public class PaymentService {
 
-    private static final String CURRENT_SOURCE = "PRODUCT_VALIDATION_SERVICE";
+    private static final String CURRENT_SOURCE = "PAYMENT_SERVICE";
     private static final Double REDUCE_SUM_VALUE = 0.0;
     public static final Double MIN_AMOUNT_VALUE = 0.1;
 
